@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Product Home</h2>
+<h4>First Method (Partial)</h4>
+@Html.Partial("ProductView")
+<h4>Second Method (RenderPartial) </h4>
+@{Html.RenderPartial("ProductView"); }
+<h4>Third Method (Action)</h4>
+@Html.Action("PAction")
+<h4>Fourth Method (RenderAction)</h4>
+@{Html.RenderAction("PAction"); }
+

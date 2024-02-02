@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<main>
+    <section class="row" aria-labelledby="aspnetTitle">
+        <h1 id="title">Partial View in MVC</h1>
+       
+    </section>
+
+    <div class="row">
+        <section class="col-md-3">
+            @{ Html.RenderPartial("ProductView");}
+        </section>
+        <section class="col-md-3">
+            @Html.Partial("ProductView")
+        </section>
+        <section class="col-md-3">
+            @Html.Action("PAction", "Product")
+        </section>
+        <section class="col-md-3">
+            @{Html.RenderAction("PAction", "Product");}
+        </section>
+    </div>
+</main>
